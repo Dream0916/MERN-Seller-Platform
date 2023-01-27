@@ -67,6 +67,14 @@ const routesProps: ROUTES[] = [
     auth: true,
   },
   {
+    name: "credits",
+    path: "/credits",
+    component: React.lazy(() => import("pages/credits/Credits")),
+    exact: true,
+    role: "admin",
+    auth: true,
+  },
+  {
     name: "notfound",
     path: "*",
     component: React.lazy(() => import("pages/not-found/NotFound")),

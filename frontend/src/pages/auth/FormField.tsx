@@ -27,7 +27,6 @@ const FormField: React.FC<Props> = ({ isRegister = false }): JSX.Element => {
   const classes = useStyles();
   const { values, handleChange, handleBlur, errors, touched } =
     useFormikContext<IValues>();
-
   return (
     <>
       <FormControl fullWidth className={classes.formControl}>

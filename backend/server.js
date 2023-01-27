@@ -24,5 +24,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/v1/user", require("./routes/user"));
 app.use("/api/v1/admin", require("./routes/admin"));
+app.use("/api/v1/credit", require("./routes/credit"));
 
 module.exports = app;
